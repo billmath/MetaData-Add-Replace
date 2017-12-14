@@ -36,6 +36,7 @@
             this.cbAttribute = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtValue = new System.Windows.Forms.TextBox();
+            this.btnAsset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -99,7 +100,10 @@
             "ms.workload:",
             "ms.tgt_pltfrm:",
             "ms.devlang:",
-            "ms.topic:"});
+            "ms.topic:",
+            "ms.asset:",
+            "ms.devlang:",
+            "ms.tgt_pltfrm:"});
             this.cbAttribute.Location = new System.Drawing.Point(150, 98);
             this.cbAttribute.Name = "cbAttribute";
             this.cbAttribute.Size = new System.Drawing.Size(263, 33);
@@ -121,11 +125,22 @@
             this.txtValue.Size = new System.Drawing.Size(269, 31);
             this.txtValue.TabIndex = 16;
             // 
+            // btnAsset
+            // 
+            this.btnAsset.Location = new System.Drawing.Point(872, 237);
+            this.btnAsset.Name = "btnAsset";
+            this.btnAsset.Size = new System.Drawing.Size(119, 52);
+            this.btnAsset.TabIndex = 17;
+            this.btnAsset.Text = "Delete";
+            this.btnAsset.UseVisualStyleBackColor = true;
+            this.btnAsset.Click += new System.EventHandler(this.btnAsset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1009, 176);
+            this.ClientSize = new System.Drawing.Size(1009, 373);
+            this.Controls.Add(this.btnAsset);
             this.Controls.Add(this.txtValue);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbAttribute);
@@ -150,6 +165,7 @@
         private System.Windows.Forms.ComboBox cbAttribute;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtValue;
+        private System.Windows.Forms.Button btnAsset;
     }
 }
 
